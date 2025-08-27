@@ -20,6 +20,19 @@ int main(void) {
     for (i = 0; i < MOVIMENTOS_TORRE; i++) {
         printf("Direita\n");
     }
+
+    // --- MOVIMENTO DO BISPO: USANDO O LAÇO DO-WHILE ---
+    // O Bispo se move 5 casas na diagonal superior direita.
+    // O laço do-while é usado para garantir que o movimento seja impresso pelo menos uma vez, mesmo que a condição seja falsa.
+    // A condição de diagonal é simulada imprimindo "Cima" e "Direita".
+
+    printf("\n>>> Movimento do BISPO (5 casas na Diagonal Superior Direita)\n");
+    i = 0; // Reinicia a variável de controle
+    do {
+        printf("Cima\n");
+        printf("Direita\n");
+        i++;
+    } while (i < MOVIMENTOS_BISPO);
    
     return 0;
 }
