@@ -34,5 +34,19 @@ int main(void) {
         i++;
     } while (i < MOVIMENTOS_BISPO);
    
+
+    // --- MOVIMENTO DA RAINHA USANDO O LAÇO WHILE ---
+    // A Rainha se move 8 casas para a esquerda.
+    // O laço while é usado para demonstrar uma condição simples baseada em um contador.
+    
+    printf("\n>>> Movimento da RAINHA (8 casas para a Esquerda)\n");
+    i = 0; // Reinicia a variável de controle
+    while (i < MOVIMENTOS_RAINHA) {
+        printf("Esquerda\n");
+        i++;
+    }
+
+
+
     return 0;
 }
